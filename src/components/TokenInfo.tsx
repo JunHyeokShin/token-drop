@@ -7,9 +7,6 @@ export default async function TokenInfo() {
   const contractMetadata = await getContractMetadata({ contract: CONTRACT });
   const total = await totalSupply({ contract: CONTRACT });
 
-  console.log(contractMetadata);
-  console.log(total);
-
   return (
     <div className="mt-4 text-gray-800 p-4 rounded-md bg-slate-300">
       <h1 className="text-2xl font-bold mb-2">Token Info</h1>
