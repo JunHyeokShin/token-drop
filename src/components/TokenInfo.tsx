@@ -7,7 +7,6 @@ import { MediaRenderer } from "thirdweb/react";
 
 export default async function TokenInfo() {
   const contractMetadata = await getContractMetadata({ contract: CONTRACT });
-  const total = await totalSupply({ contract: CONTRACT });
 
   return (
     <div className="mt-4 text-gray-800 p-4 rounded-md bg-slate-300">
